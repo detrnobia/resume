@@ -1,6 +1,6 @@
 <section class="section">
     <div class="box">
-        <h2 class="title is-4 has-text-link-dark">Work Experience & Awards</h2>
+        <h2 class="title is-4 has-text-link-dark">Work Experience</h2>
 
         <div class="content mb-5">
             <h3 class="title is-6">University of the Philippines Visayas</h3>
@@ -19,6 +19,9 @@
                 <li>Participated in community outreach and public service events.</li>
             </ul>
         </div>
+</section>
+    <div class ="box">
+        <h2 class="title is-4 has-text-link-dark">Awards & Participation</h2>
 
         <div class="content mb-5">
             <h3 class="title is-6">Komsai Hack 2024: Agri-Vision</h3>

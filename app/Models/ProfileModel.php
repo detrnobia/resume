@@ -1,10 +1,12 @@
 <?php
+
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class ProfileModel extends Model
 {
-    protected $table = 'profile';
+    protected $table = 'contact';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['name', 'title', 'about', 'email', 'phone'];
+    protected $allowedFields = ['name', 'title', 'photo', 'email', 'phone', 'address', 'lang'];
 }

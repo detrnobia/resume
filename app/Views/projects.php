@@ -3,17 +3,17 @@
         <h2 class="title is-4 has-text-link-dark">Projects</h2>
 
         <div class="content mb-5">
-            <h3 class="title is-6">Permilogical: A Digitalized Logbook for University Dorm Permit</h3>
-            <p><a href="https://github.com/permilogical" target="_blank">github/permilogical</a></p>
+            <h3 class="title is-6">Pet Simulator <span class="tag is-light is-success ml-2">Full Stack Developer</span></h3>
+            <p><a href="https://github.com/darahvia/156-Midterms-Pet-Simulator.git" target="_blank">github/PetSimulator</a></p>
             <ul>
-                <li>Java-based terminal app to streamline dormitory permit filing at UPV.</li>
+                <li>Mobile Game Application inspired by Tamagotchi, where users can adopt, nurture, feed, play with, and care for their digital companion</li>
             </ul>
         </div>
 
         <div class="content mb-5">
             <h3 class="title is-6">Vital Vantage <span class="tag is-light is-info ml-2">Backend Developer</span></h3>
             <p>
-                <a href="https://github.com/VitalVantage" target="_blank">github/VitalVantage</a> | 
+                <a href="https://github.com/falsense/VitalVantage.git" target="_blank">github/VitalVantage</a> | 
                 <em>Aug. 2024 – Dec. 2024</em>
             </p>
             <ul>
@@ -25,7 +25,7 @@
         <div class="content mb-5">
             <h3 class="title is-6">Dormlink <span class="tag is-light is-success ml-2">Full Stack Developer</span></h3>
             <p>
-                <a href="https://github.com/dorm-database" target="_blank">github/dorm-database</a> | 
+                <a href="https://github.com/elishandreaj/dorm-database.git" target="_blank">github/dorm-database</a> | 
                 <em>April 2024 – May 2024</em>
             </p>
             <ul>
@@ -50,6 +50,13 @@
             <p>UPV DPSM | <em>Nov. 2023 – Aug. 2024</em></p>
             <ul>
                 <li>Managed updates for BS Statistics and Computer Science course syllabus pages.</li>
+            </ul>
+        </div>
+        <div class="content mb-5">
+            <h3 class="title is-6">Permilogical: A Digitalized Logbook for University Dorm Permit</h3>
+            <p><a href="https://github.com/permilogical" target="_blank">github/permilogical</a></p>
+            <ul>
+                <li>Java-based terminal app to streamline dormitory permit filing at UPV.</li>
             </ul>
         </div>
 

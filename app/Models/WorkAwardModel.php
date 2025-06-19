@@ -2,8 +2,8 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class ExperienceModel extends Model
+class WorkAwardModel extends Model
 {
-    protected $table = 'experience';
+    protected $table = 'work_awards';
     protected $allowedFields = ['role', 'company', 'year'];
 }

@@ -27,7 +27,7 @@ body {
 .box media-content {
     color: #fff;
 }
-.box .media-content image is-48x48{
+/* .box .media-content image is-48x48{
     background: #fff;
     margin-right: 18px;
     border: 2px solid #a34fc7;
@@ -37,7 +37,7 @@ body {
     color: #a34fc7;
     font-weight: 700;
     font-size: 1.15rem;
-}
+} */
 
 .title.is-4,
 .title.is-3 {
@@ -81,6 +81,14 @@ a:hover {
 
 .mb-5 {
     margin-bottom: 2.5rem !important;
+}
+
+.mb-4 p img {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 8px !important;
+    vertical-align: middle !important;
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(250deg) !important;
 }
 
 .box:not(:last-child)::after {

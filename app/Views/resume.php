@@ -5,9 +5,31 @@
     <title>Kate Capadocia - Resume</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 </head>
 <body class="has-background-dark has-text-white-ter">
+
+    <!-- HERO SECTION OUTSIDE OF CONTAINER FOR FULL WIDTH -->
+    <section class="hero has-background-primary-light mb-5">
+        <div class="hero-body">
+            <div class="columns is-vcentered is-variable is-6">
+                <div class="column">
+                    <h1 class="title is-2 has-text-dark">Discover my Amazing<br>Art Space!</h1>
+                    <p class="subtitle is-5 has-text-grey-dark">
+                        &lt;code&gt; I build Website and Android applications. &lt;/code&gt;
+                    </p>
+                    <button class="button is-link mt-3">Contact Me</button>
+                </div>
+                <div class="column is-narrow">
+                    <figure class="image is-256x256">
+                        <img class="is-rounded" src="assets/images/profile.png" alt="Profile">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <div class="columns">
@@ -36,7 +58,8 @@
                     </div>
 
                     <div class="mb-4">
-                        <strong>Skills</strong>
+                        <h2><strong>Skills and Interests</strong></h2><br>
+                        <strong>Programming Languages</strong>
                         <div class="tags">
                             <span class="tag is-info">HTML</span>
                             <span class="tag is-info">CSS</span>
@@ -69,41 +92,9 @@
                         </ul>
                     </div>
 
-                    <div class="buttons is-centered">
-                        <a href="assets/files/Resume_Capdocia.pdf" class="button is-primary is-fullwidth" target="_blank">
-                            <img src="assets/images/download.png" class="mr-2">Download CV
-                        </a>
-                    </div>
-
-                    <div class="mt-4 has-text-centered">
-                        <a href="https://facebook/kate-capadocia"><img src="assets/images/facebook.png"></a>
-                        <a href="https://instagram/kcateis"><img src="assets/images/instagram.png"></a>
-                        <a href="https://github.com/detrnobia" target="_blank"><img src="assets/images/github.png"></a>
-                        <a href="https://linkedin.com/in/kate-capadocia" target="_blank"><img src="assets/images/linkedin.png"></a>
-                    </div>
-                </aside>
-
-                <!-- Main Content -->
-                <main class="column is-three-quarters content p-5">
-                    <!-- Hero Section -->
-                    <section class="box has-background-primary-light mb-5">
-                        <div class="columns is-vcentered">
-                            <div class="column">
-                                <h1 class="title is-3">Discover my Amazing<br>Art Space!</h1>
-                                <p class="subtitle is-6 has-text-grey-dark">&lt;code&gt; I build Website and Android applications. &lt;/code&gt;</p>
-                                <button class="button is-link mt-2">Explore Now</button>
-                            </div>
-                            <div class="column is-narrow">
-                                <figure class="image is-128x128">
-                                    <img src="assets/images/profile.png" alt="Profile">
-                                </figure>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Education -->
-                    <section class="box">
-                        <h2 class="title is-4">Education</h2>
+                    <!-- 📌 MOVED EDUCATION SECTION HERE -->
+                    <div class="mb-4">
+                        <h2 class="title is-5 has-text-white">Education</h2>
                         <div class="media mb-3">
                             <figure class="media-left">
                                 <img src="assets/images/UPV.png" class="image is-48x48" alt="UPV">
@@ -122,7 +113,25 @@
                                 STE Program (JHS, SHS with High Honors) | June 2016 - July 2022
                             </div>
                         </div>
-                    </section>
+                    </div>
+
+                    <div class="buttons is-centered">
+                        <a href="assets/files/Resume_Capdocia.pdf" class="button is-primary is-fullwidth" target="_blank">
+                            <img src="assets/images/download.png" class="mr-2">Download CV
+                        </a>
+                    </div>
+
+                    <div class="mt-4 has-text-centered">
+                        <a href="https://facebook/kate-capadocia"><img src="assets/images/facebook.png"></a>
+                        <a href="https://instagram/kcateis"><img src="assets/images/instagram.png"></a>
+                        <a href="https://github.com/detrnobia" target="_blank"><img src="assets/images/github.png"></a>
+                        <a href="https://linkedin.com/in/kate-capadocia" target="_blank"><img src="assets/images/linkedin.png"></a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="column is-three-quarters content p-5">
+                    <!-- Removed Hero Section from here -->
 
                     <!-- Include Modular Sections -->
                     <?php include 'org_leadership.php'; ?>
@@ -131,13 +140,22 @@
 
                     <!-- Edit Button -->
                     <div class="has-text-right mt-5">
-                        <button class="button is-warning" onclick="showEditForm()">Edit</button>
+                        <button class="button is-warning" onclick="openModal()">Edit</button>
                     </div>
                 </main>
             </div>
         </div>
     </section>
 
-    <script src="<?= base_url('js/script.js') ?>"></script>
+    <script>
+        function openModal() {
+            document.getElementById('edit-modal').classList.add('is-active');
+        }
+        function closeModal() {
+            document.getElementById('edit-modal').classList.remove('is-active');
+        }
+    </script>
+
+    <?= view('editResume') ?>
 </body>
 </html>
