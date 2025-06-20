@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('/edit-resume', 'Home::editResume');
-$routes->post('/update-resume', 'Home::updateResume');
-$routes->get('/resume', 'Home::getResume');
+$routes->get('/', 'ProfileController::index');
+
+$routes->get('/editResume', 'ProfileController::edit');
+$routes->post('/updateResume', 'ProfileController::update');

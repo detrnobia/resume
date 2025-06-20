@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <!-- Sidebar -->
+                 Sidebar 
                 <aside class="column sidebar-custom has-background-link-dark has-text-white p-5">
                     <figure class="image is-128x128 mx-auto mb-3">
                         <img class="is-rounded" src="assets/images/photo.jpg" alt="Profile">
@@ -126,9 +126,9 @@
                         <a href="https://www.linkedin.com/in/kate-capadocia-761782348/" target="_blank"><img src="assets/images/linkedin.png" class= "mb-4"></a>
                     </div>
                 </aside>
-                <!-- Main Content -->
+                <!-- Main Content 
                 <main class="column is-three-quarters content p-5">
-                    <!-- Education Card -->
+                    <!-- Education Card 
                     <div class="box equal-box" id="education-card">
                         <h2 class="title is-4 has-text-link-dark">Education</h2>
                         <div class="media mb-3">
@@ -151,13 +151,61 @@
                             </div>
                         </div>
                     </div>
-                    <?php include 'org_leadership.php'; ?>
-                    <?php include 'projects.php'; ?>
-                    <?php include 'awards.php'; ?>
-                </main>
+
             </div>
         </div>
     </section>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kate Capadocia - Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+</head>
+<body class="has-background-dark has-text-white-ter">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <!-- Sidebar -->
+                <aside class="column sidebar-custom has-background-link-dark has-text-white p-5">
+                    <figure class="image is-128x128 mx-auto mb-3">
+                        <img class="is-rounded" src="<?= esc($profile['photo'] ?? 'assets/images/photo.jpg') ?>" alt="Profile">
+                    </figure>
+                    <h2 class="title is-4 has-text-white has-text-centered"><?= esc($profile['name'] ?? '') ?></h2>
+                    <p class="subtitle is-6 has-text-centered"><?= esc($profile['title'] ?? '') ?></p>
+                    <div class="sidebar-content mb-4">
+                        <p class="contact-info has-text-white"><img src="assets/images/email.png"> <?= esc($profile['email'] ?? '') ?></p>
+                        <p class="contact-info has-text-white"><img src="assets/images/phone.png"> <?= esc($profile['phone'] ?? '') ?></p>
+                        <p class="contact-info has-text-white"><img src="assets/images/address.png"> <?= esc($profile['address'] ?? '') ?></p>
+                        <div class="languages-header">Languages</div>
+                        <ul class="languages-list">
+                            <?php foreach (explode(',', $profile['lang'] ?? '') as $lang): ?>
+                                <li><?= esc(trim($lang)) ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <!-- Edit Button: redirects to editResume.php -->
+                    <div class="buttons is-centered mt-4">
+                        <a href="<?= site_url('editResume') ?>" class="button is-link is-fullwidth">
+                            <span class="icon"><i class="fas fa-edit"></i></span>
+                            <span>Edit Profile</span>
+                        </a>
+                    </div>
+                </aside>
+                <!-- Main Content (add your main content here) -->
+                <main class="column is-three-quarters content p-5">
+                    <!-- ...main content here... -->
+                </main>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </body>
 </html>

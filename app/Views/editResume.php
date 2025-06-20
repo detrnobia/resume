@@ -6,7 +6,7 @@
       <p class="modal-card-title">Edit Resume</p>
       <button class="delete" aria-label="close" onclick="closeModal()"></button>
     </header>
-    <form action="/update-resume" method="post" enctype="multipart/form-data">
+    <form action="/updateResume" method="post" enctype="multipart/form-data">
       <section class="modal-card-body">
         <!-- Example fields, add more as needed -->
         <div class="field">
@@ -18,40 +18,40 @@
         <div class="field">
           <label class="label">Name</label>
           <div class="control">
-            <input class="input" type="text" name="name" value="<?= esc($resume['name'] ?? '') ?>" required>
+            <input class="input" type="text" name="name" value="<?= esc($profile['name'] ?? '') ?>" required>
           </div>
         </div>
         <div class="field">
           <label class="label">Title</label>
           <div class="control">
-            <textarea class="textarea" name="title"><?= esc($resume['title'] ?? '') ?></textarea>
+            <input class="input" name="title" value="<?= esc($profile['title'] ?? '') ?>">
           </div>
         </div>
         <div class="field">
           <label class="label">Email</label>
           <div class="control">
-            <textarea class="textarea" name="email"><?= esc($resume['email'] ?? '') ?></textarea>
+            <input class="input" name="email" value="<?= esc($profile['email'] ?? '') ?>">
+
           </div>
         </div>
         <div class="field">
           <label class="label">Phone Number</label>
           <div class="control">
-            <textarea class="textarea" name="number"><?= esc($resume['number'] ?? '') ?></textarea>
+            <input class="input" name="phone" value="<?= esc($profile['phone'] ?? '') ?>">
           </div>
         </div>
         <div class="field">
           <label class="label">Address</label>
           <div class="control">
-            <textarea class="textarea" name="address"><?= esc($resume['address'] ?? '') ?></textarea>
+            <input class="input" name="address" value="<?= esc($profile['address'] ?? '') ?>">
           </div>
         </div>
         <div class="field">
           <label class="label">Languages</label>
           <div class="control">
-            <textarea class="textarea" name="lang"><?= esc($resume['lang'] ?? '') ?></textarea>
+            <textarea class="textarea" name="lang"><?= esc($profile['lang'] ?? '') ?></textarea>
           </div>
         </div>
-        <!-- Add more fields as needed -->
       </section>
       <footer class="modal-card-foot">
         <button type="button" class="button" onclick="closeModal()">Cancel</button>

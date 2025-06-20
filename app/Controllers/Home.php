@@ -1,4 +1,4 @@
-<?php
+<!-- 
 
 namespace App\Controllers;
 
@@ -13,7 +13,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        // $profileModel = new ProfileModel();
+        $profileModel = new ProfileModel();
         // $projectModel = new ProjectModel();
         // $orgModel = new OrgModel();
         // $workAwardModel = new WorkAwardModel();
@@ -25,8 +25,8 @@ class Home extends BaseController
         // $data['work_awards'] = $workAwardModel->where('resume_id', 1)->findAll();
         // $data['education'] = $educationModel->findAll(); // Assuming EducationModel is defined similarly
 
-        return view('resume');
-    }
+    //     return view('resume');
+    // }
 
     // public function update()
     // {
@@ -86,4 +86,42 @@ class Home extends BaseController
     //     // Repeat for projects, orgs, awards (loop through posted arrays)
     //     return redirect()->to('/resume');
     // }
+}
+--->
+<?php
+
+use App\Controllers\BaseController;
+use App\Models\ProfileModel;
+
+class Home extends BaseController
+{
+    public function index()
+    {
+        $model = new ProfileModel();
+        $profile = $model->first(); // Get the first profile row
+        return view('resume', ['profile' => $profile]);
+    }
+
+    public function edit()
+    {
+        $model = new ProfileModel();
+        $profile = $model->first();
+        return view('editResume', ['profile' => $profile]);
+    }
+
+    public function update()
+    {
+        $model = new ProfileModel();
+        $data = [
+            'name'    => $this->request->getPost('name'),
+            'title'   => $this->request->getPost('title'),
+            'photo'   => $this->request->getPost('photo'),
+            'email'   => $this->request->getPost('email'),
+            'phone'   => $this->request->getPost('phone'),
+            'address' => $this->request->getPost('address'),
+            'lang'    => $this->request->getPost('lang'),
+        ];
+        $model->update(1, $data); // Update the first row (id=1)
+        return redirect()->to('/resume');
+    }
 }
