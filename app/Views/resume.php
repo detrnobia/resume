@@ -152,7 +152,6 @@
                     </div>
                     <?php include 'org_leadership.php'; ?>
                     <?php include 'projects.php'; ?>
-                    <?php include 'work.php'; ?>
                     <?php include 'awards.php'; ?>
                 </main>
             </div>

@@ -125,4 +125,17 @@
 <script>
 function toggleDesc(id, btn) {
     var desc = document.getElementById(id);
-    if (desc.style.display === "none" || desc.style.display
+    if (desc.style.display === "none" || desc.style.display === "") {
+        desc.style.display = "block";
+        btn.querySelector('span').textContent = "Hide Details";
+        btn.querySelector('.icon i').classList.remove('fa-chevron-down');
+        btn.querySelector('.icon i').classList.add('fa-chevron-up');
+    } else {
+        desc.style.display = "none";
+        btn.querySelector('span').textContent = "Show Details";
+        btn.querySelector('.icon i').classList.remove('fa-chevron-up');
+        btn.querySelector('.icon i').classList.add('fa-chevron-down');
+    }
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
