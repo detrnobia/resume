@@ -9,47 +9,38 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 </head>
 <body class="has-background-dark has-text-white-ter">
-
-    <!-- HERO SECTION OUTSIDE OF CONTAINER FOR FULL WIDTH -->
-    <section class="hero has-background-primary-light mb-5">
+    <section class="hero custom-header-bg">
         <div class="hero-body">
-            <div class="columns is-vcentered is-variable is-6">
-                <div class="column">
-                    <h1 class="title is-2 has-text-dark">Discover my Amazing<br>Art Space!</h1>
-                    <p class="subtitle is-5 has-text-grey-dark">
-                        &lt;code&gt; I build Website and Android applications. &lt;/code&gt;
-                    </p>
-                    <button class="button is-link mt-3">Contact Me</button>
-                </div>
-                <div class="column is-narrow">
-                    <figure class="image is-256x256">
-                        <img class="is-rounded" src="assets/images/profile.png" alt="Profile">
-                    </figure>
+            <div class="container">
+                <div class="column is-7">                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                    <h1 class="title is-1 has-text-white">
+                        Turning Ideas into Interfaces!
+                    </h1>
+                        <p class="subtitle is-4">
+                            <span class="purple-code">&lt;code&gt;</span> Sleek sites. Smart Apps <span class="purple-code">&lt;/code&gt;</span>
+                        </p>
+                    <a href="mailto:katecapadocia@gmail.com" class="button is-link is-medium mt-3" style="text-decoration: none;">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
     <section class="section">
         <div class="container">
             <div class="columns">
                 <!-- Sidebar -->
-                <aside class="column is-one-quarter has-background-link-dark has-text-white p-5">
+                <aside class="column sidebar-custom has-background-link-dark has-text-white p-5">
                     <figure class="image is-128x128 mx-auto mb-3">
                         <img class="is-rounded" src="assets/images/photo.jpg" alt="Profile">
                     </figure>
                     <h2 class="title is-4 has-text-white has-text-centered">Kate Capadocia</h2>
                     <p class="subtitle is-6 has-text-centered">Front-end Developer<br>UI/UX Designer</p>
 
-                    <div class="mb-4">
-                        <p><img src="assets/images/email.png"> katecapadocia@gmail.com</p>
-                        <p><img src="assets/images/phone.png"> 09634636335</p>
-                        <p><img src="assets/images/address.png"> San Jose, Antique, Philippines</p>
-                    </div>
-
-                    <div class="mb-4">
-                        <strong>Languages</strong>
-                        <ul>
+                    <div class="sidebar-content mb-4">
+                        <p class="contact-info has-text-white"><img src="assets/images/email.png"> katecapadocia@gmail.com</p>
+                        <p class="contact-info has-text-white"><img src="assets/images/phone.png"> 09634636335</p>
+                        <p class="contact-info has-text-white"><img src="assets/images/address.png"> San Jose, Antique, Philippines</p>
+                    <div class="languages-header">Languages</div>
+                        <ul class="languages-list">
                             <li>Kinaray-a</li>
                             <li>Filipino</li>
                             <li>English</li>
@@ -58,30 +49,60 @@
                     </div>
 
                     <div class="mb-4">
-                        <h2><strong>Skills and Interests</strong></h2><br>
-                        <strong>Programming Languages</strong>
-                        <div class="tags">
-                            <span class="tag is-info">HTML</span>
-                            <span class="tag is-info">CSS</span>
-                            <span class="tag is-info">JS</span>
-                            <span class="tag is-info">PHP</span>
-                            <span class="tag is-info">Python</span>
-                            <span class="tag is-info">C</span>
+                        <div class="skills-header">Skills and Interests</div>
+                        <div class="skills-list"><strong>Programming Languages</strong></div>
+                        <div class="tags is-flex is-align-items-center is-flex-wrap-wrap">
+                            <img src="assets/images/asm.png" alt="Assembly" class="language-icon">
+                            <img src="assets/images/js.png" alt="JavaScript" class="language-icon">
+                            <img src="assets/images/c++.png" alt="c++" class="language-icon">
+                            <img src="assets/images/py.png" alt="Python" class="language-icon">
+                            <img src="assets/images/c.png" alt="C" class="language-icon">
+                            <img src="assets/images/php.png" alt="Php" class="language-icon">
+                        </div>
+                        <div class="skills-list"><strong>Tools & Tech</strong></div>
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <img src="assets/images/html.png" alt="HTML" class="language-icon">
+                                <span class="tool-label">HTML</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/css.png" alt="CSS" class="language-icon">
+                                <span class="tool-label">CSS</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/vscode.png" alt="VS Code" class="language-icon">
+                                <span class="tool-label">VS Code</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/figma.png" alt="Figma" class="language-icon">
+                                <span class="tool-label">Figma</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/flutter.png" alt="Flutter" class="language-icon">
+                                <span class="tool-label">Flutter</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/canva.png" alt="Canva" class="language-icon">
+                                <span class="tool-label">Canva</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/firebase.png" alt="Firebase" class="language-icon">
+                                <span class="tool-label">Firebase</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/excel.png" alt="Excel" class="language-icon">
+                                <span class="tool-label">Excel</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="assets/images/windows.png" alt="Windows" class="language-icon">
+                                <span class="tool-label">Windows</span>
+                            </div>
                         </div>
                     </div>
 
                     <div class="mb-4">
-                        <strong>Tools & Tech</strong>
-                        <ul>
-                            <li>VS Code, Figma, Canva</li>
-                            <li>MS Excel, Firebase, Flutter</li>
-                            <li>GIT & GitHub</li>
-                        </ul>
-                    </div>
-
-                    <div class="mb-4">
-                        <strong>Interests</strong>
-                        <ul>
+                        <div class="interests-header">Interests</div>
+                        <ul class="interests-list">
                             <li>Data Management</li>
                             <li>UI/UX Design</li>
                             <li>Reading & Writing</li>
@@ -92,9 +113,24 @@
                         </ul>
                     </div>
 
-                    <!-- 📌 MOVED EDUCATION SECTION HERE -->
-                    <div class="mb-4">
-                        <h2 class="title is-5 has-text-white">Education</h2>
+                    <div class="buttons is-centered">
+                        <a href="assets/files/Resume_Capadocia.pdf" class="button is-primary is-fullwidth" download>
+                            <img src="assets/images/download.png" class="mr-2">Download CV
+                        </a>
+                    </div>
+
+                    <div class="mt-4 has-text-centered">
+                        <a href="https://www.facebook.com/kate.capadocia.2025"><img src="assets/images/facebook.png" class= "mb-4"></a>
+                        <a href="https://www.instagram.com/kcateis/"><img src="assets/images/instagram.png" class= "mb-4"></a>
+                        <a href="https://github.com/detrnobia" target="_blank"><img src="assets/images/github.png" class= "mb-4"></a>
+                        <a href="https://www.linkedin.com/in/kate-capadocia-761782348/" target="_blank"><img src="assets/images/linkedin.png" class= "mb-4"></a>
+                    </div>
+                </aside>
+                <!-- Main Content -->
+                <main class="column is-three-quarters content p-5">
+                    <!-- Education Card -->
+                    <div class="box equal-box" id="education-card">
+                        <h2 class="title is-4 has-text-link-dark">Education</h2>
                         <div class="media mb-3">
                             <figure class="media-left">
                                 <img src="assets/images/UPV.png" class="image is-48x48" alt="UPV">
@@ -114,48 +150,14 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="buttons is-centered">
-                        <a href="assets/files/Resume_Capdocia.pdf" class="button is-primary is-fullwidth" target="_blank">
-                            <img src="assets/images/download.png" class="mr-2">Download CV
-                        </a>
-                    </div>
-
-                    <div class="mt-4 has-text-centered">
-                        <a href="https://facebook/kate-capadocia"><img src="assets/images/facebook.png"></a>
-                        <a href="https://instagram/kcateis"><img src="assets/images/instagram.png"></a>
-                        <a href="https://github.com/detrnobia" target="_blank"><img src="assets/images/github.png"></a>
-                        <a href="https://linkedin.com/in/kate-capadocia" target="_blank"><img src="assets/images/linkedin.png"></a>
-                    </div>
-                </aside>
-
-                <!-- Main Content -->
-                <main class="column is-three-quarters content p-5">
-                    <!-- Removed Hero Section from here -->
-
-                    <!-- Include Modular Sections -->
                     <?php include 'org_leadership.php'; ?>
                     <?php include 'projects.php'; ?>
-                    <?php include 'work_awards.php'; ?>
-
-                    <!-- Edit Button -->
-                    <div class="has-text-right mt-5">
-                        <button class="button is-warning" onclick="openModal()">Edit</button>
-                    </div>
+                    <?php include 'work.php'; ?>
+                    <?php include 'awards.php'; ?>
                 </main>
             </div>
         </div>
     </section>
 
-    <script>
-        function openModal() {
-            document.getElementById('edit-modal').classList.add('is-active');
-        }
-        function closeModal() {
-            document.getElementById('edit-modal').classList.remove('is-active');
-        }
-    </script>
-
-    <?= view('editResume') ?>
 </body>
 </html>
