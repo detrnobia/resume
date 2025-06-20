@@ -146,7 +146,8 @@
                             </figure>
                             <div class="media-content">
                                 <strong>Antique National School</strong><br>
-                                STE Program (JHS, SHS with High Honors) | June 2016 - July 2022
+                                STE Program (JHS, With High Honors) | June 2016 - July 2020<br>
+                                STEM Strand (SHS, With High Honors) | June 2020 - July 2022
                             </div>
                         </div>
                     </div>
